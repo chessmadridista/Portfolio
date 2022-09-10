@@ -1,0 +1,90 @@
+[
+    {
+        "experienceID": 0,
+        "company": "Zasti",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "startDate": "2020-02",
+        "endDate": "2020-11",
+        "role": "Data Science Intern",
+        "projects": [
+            {
+                "projectID": 0,
+                "projectName": "IT Industry Basics",
+                "projectResponsibility": [
+                    {
+                        "projectRespID": 0,
+                        "projectRespDescription": "I learnt about the basic principles of data analysis, data science and software development."
+                    }
+                ],
+                "projectTechStack": [
+                    ""
+                ]
+            },
+            {
+                "projectID": 1,
+                "projectName": "Mental Health App",
+                "projectResponsibility": [
+                    {
+                        "projectRespID": 0,
+                        "projectRespDescription": "I researched about datasets related to mental health for training models to identify symptoms at an early stage."
+                    }
+                ],
+                "projectTechStack": [
+                    ""
+                ]
+            },
+            {
+                "projectID": 2,
+                "projectName": "Mental Health CMS Dashboard",
+                "projectResponsibility": [
+                    {
+                        "projectRespID": 0,
+                        "projectRespDescription": "I developed a CMS dashboard for mental health detection for both doctors and patients."
+                    }
+                ],
+                "projectTechStack": [
+                    ""
+                ]
+            },
+            {
+                "projectID": 3,
+                "projectName": "COVID-19 detection",
+                "projectResponsibility": [
+                    {
+                        "projectRespID": 0,
+                        "projectRespDescription": "I developed a CMS dashboard for mental health detection for both doctors and patients."
+                    }
+                ],
+                "projectTechStack": [
+                    ""
+                ]
+            }
+        ]
+    },
+    {
+        "experienceID": 1,
+        "company": "Zasti",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "startDate": "2020-12",
+        "endDate": "Current",
+        "role": "Software Development Engineer",
+        "projects": [
+            {
+                "projectID": 0,
+                "projectName": "",
+                "projectResponsibility": [
+                    {
+                        "projectRespID": 0,
+                        "projectRespDescription": ""
+                    }
+                ],
+                "projectTechStack": [
+                    "",
+                    ""
+                ]
+            }
+        ]
+    }
+]
