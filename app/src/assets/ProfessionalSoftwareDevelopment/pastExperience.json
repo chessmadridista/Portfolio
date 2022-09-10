@@ -18,7 +18,13 @@
                     }
                 ],
                 "projectTechStack": [
-                    ""
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "Python",
+                    "Pandas",
+                    "Numpy",
+                    "Seaborn"
                 ]
             },
             {
@@ -30,9 +36,7 @@
                         "projectRespDescription": "I researched about datasets related to mental health for training models to identify symptoms at an early stage."
                     }
                 ],
-                "projectTechStack": [
-                    ""
-                ]
+                "projectTechStack": []
             },
             {
                 "projectID": 2,
@@ -44,7 +48,13 @@
                     }
                 ],
                 "projectTechStack": [
-                    ""
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "jQuery",
+                    "Python",
+                    "Flask",
+                    "MongoDB"
                 ]
             },
             {
@@ -53,11 +63,26 @@
                 "projectResponsibility": [
                     {
                         "projectRespID": 0,
-                        "projectRespDescription": "I developed a CMS dashboard for mental health detection for both doctors and patients."
+                        "projectRespDescription": "I developed deep learning models for detecting COVID-19 using X-ray and Chest CT scan images using Tensorflow."
                     }
                 ],
                 "projectTechStack": [
-                    ""
+                    "Python",
+                    "Tensorflow"
+                ]
+            },
+            {
+                "projectID": 4,
+                "projectName": "Gun detection",
+                "projectResponsibility": [
+                    {
+                        "projectRespID": 0,
+                        "projectRespDescription": "I developed deep learning models for detecting guns in a given picture using Tensorflow."
+                    }
+                ],
+                "projectTechStack": [
+                    "Python",
+                    "Tensorflow object detection API"
                 ]
             }
         ]
@@ -73,16 +98,130 @@
         "projects": [
             {
                 "projectID": 0,
-                "projectName": "",
+                "projectName": "Syneos Project",
                 "projectResponsibility": [
                     {
                         "projectRespID": 0,
-                        "projectRespDescription": ""
+                        "projectRespDescription": "I scraped raw data related to a common eye disease in the U.S. for social media listening to gauge the performance of pharmaceutical products on social media using opthalmology blogs and forums as well as platforms such as Amazon and Twitter."
                     }
                 ],
                 "projectTechStack": [
-                    "",
-                    ""
+                    "Python",
+                    "Beautiful Soup",
+                    "Scrapy"
+                ]
+            },
+            {
+                "projectID": 1,
+                "projectName": "Internal Web Scraper For Zasti",
+                "projectResponsibility": [
+                    {
+                        "projectRespID": 0,
+                        "projectRespDescription": "This tool was developed to scrape information related to government grants. I worked on the frontend development of the application."
+                    }
+                ],
+                "projectTechStack": [
+                    "Vue.js v2",
+                    "Vuetify"
+                ]
+            },
+            {
+                "projectID": 2,
+                "projectName": "Mental Health Web Apps",
+                "projectResponsibility": [
+                    {
+                        "projectRespID": 0,
+                        "projectRespDescription": "I was responsible for testing the web apps related to mental health."
+                    }
+                ],
+                "projectTechStack": []
+            },
+            {
+                "projectID": 3,
+                "projectName": "ATOM",
+                "projectResponsibility": [
+                    {
+                        "projectRespID": 0,
+                        "projectRespDescription": "I was responsible for researching about the scientific calculations for a carbon emissions management platform with a specific focus on the Healthcare and the Pharmaceutical sector in the U.S."
+                    },
+                    {
+                        "projectRespID": 1,
+                        "projectRespDescription": "I was part of the development team for prototyping the dashboard for the carbon emissions management platform."
+                    },
+                    {
+                        "projectRespID": 2,
+                        "projectRespDescription": "I was responsible for testing the MVP of the carbon emissions management dashboard."
+                    }
+                ],
+                "projectTechStack": [
+                    "Angular v6"
+                ]
+            },
+            {
+                "projectID": 4,
+                "projectName": "Cataract Surgery Analytics",
+                "projectResponsibility": [
+                    {
+                        "projectRespID": 0,
+                        "projectRespDescription": "I was responsible for data analysis of an internal project related to carbon emissions produced in a single cataract surgery."
+                    },
+                    {
+                        "projectRespID": 1,
+                        "projectRespDescription": "I was responsible for creating the documentation for this project."
+                    }
+                ],
+                "projectTechStack": [
+                    "MS Excel",
+                    "Python",
+                    "Pandas"
+                ]
+            },
+            {
+                "projectID": 5,
+                "projectName": "EyeSustain",
+                "projectResponsibility": [
+                    {
+                        "projectRespID": 0,
+                        "projectRespDescription": "I was responsible for the development, testing and deployment of a web app to calculate the carbon emissions per cataract surgery in the U.S."
+                    }
+                ],
+                "projectTechStack": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "jQuery",
+                    "Material design components",
+                    "MongoDB",
+                    "Python",
+                    "Flask",
+                    "Nginx",
+                    "Gunicorn"
+                ]
+            },
+            {
+                "projectID": 6,
+                "projectName": "AgriTech Prototype (in development)",
+                "projectResponsibility": [
+                    {
+                        "projectRespID": 0,
+                        "projectRespDescription": "I am responsible for the development, testing and deployment of a web app to calculate which will be used to calculate the carbon emissions by a farmer in the agricultural sector in the U.S."
+                    },
+                    {
+                        "projectRespID": 1,
+                        "projectRespDescription": "I am leading an intern and guiding her in the frontend development of this project."
+                    }
+                ],
+                "projectTechStack": [
+                    "Vue.js v2",
+                    "Vuex",
+                    "Vuetify",
+                    "Vue router",
+                    "Material design components",
+                    "MongoDB",
+                    "Python",
+                    "Flask",
+                    "Nginx",
+                    "Gunicorn"
                 ]
             }
         ]

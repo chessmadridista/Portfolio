@@ -1,5 +1,6 @@
 <template>
     <v-container>
+        <!-- TODO: Add the project tech stack used by separating them using bullet points in the same line. -->
         <v-card v-for="experience of pastExperience"
         :key="experience.experienceID">
             <p>Check</p>
