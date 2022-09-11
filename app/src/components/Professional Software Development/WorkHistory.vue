@@ -9,7 +9,7 @@
             <p>{{ experience.startDate }} - {{ experience.endDate }}</p>
             <v-timeline>
                 <v-timeline-item
-                color="#00acee"    
+                color="primary"    
                 v-for="project of experience.projects"
                 :key="project.projectID"
                 >
