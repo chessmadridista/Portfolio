@@ -1,21 +1,21 @@
 <template>
   <v-app>
-    <v-app-bar
-    color="primary"
-    >
-
-    </v-app-bar>
+    <NavigationBar />
     <Loader />
-    <router-view />
+    <v-main>
+      <router-view />
+    </v-main>
   </v-app>
 </template>
 <script>
 import Loader from './components/Auxiliary/Loader.vue';
+import NavigationBar from './components/Auxiliary/NavigationBar.vue';
 
 export default {
   name: "App",
   components: {
     Loader,
+    NavigationBar,
   },
   data() {
     return {

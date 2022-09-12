@@ -6,6 +6,7 @@ Vue.use(Vuex);
 const store = new Vuex.Store({
     state: {
         isLoading: true,
+        pageTitle: "",
     },
     mutations: {
         START_LOADING(state) {
@@ -13,6 +14,9 @@ const store = new Vuex.Store({
         },
         END_LOADING(state) {
             state.isLoading = false;
+        },
+        SET_PAGE_TITLE(state, pageTitle) {
+            state.pageTitle = pageTitle;
         },
     },
     actions: {
@@ -23,6 +27,11 @@ const store = new Vuex.Store({
         },
         endLoading(context) {
             context.commit("END_LOADING");
+
+            return true;
+        },
+        changePageTitle(context, pageTitle) {
+            context.commit("SET_PAGE_TITLE", pageTitle);
 
             return true;
         },
