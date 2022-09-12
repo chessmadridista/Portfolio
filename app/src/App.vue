@@ -1,5 +1,10 @@
 <template>
   <v-app>
+    <v-app-bar
+    color="primary"
+    >
+
+    </v-app-bar>
     <Loader />
     <router-view />
   </v-app>
