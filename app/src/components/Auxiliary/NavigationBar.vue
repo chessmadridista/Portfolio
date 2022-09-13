@@ -42,22 +42,22 @@ export default {
                 {
                     itemID: 1,
                     title: "Blog",
-                    icon: "mdi-view-dashboard",
+                    icon: "mdi-typewriter",
                 },
                 {
                     itemID: 2,
                     title: "Projects",
-                    icon: "mdi-view-dashboard",
+                    icon: "mdi-notebook",
                 },
                 {
                     itemID: 3,
                     title: "CV",
-                    icon: "mdi-view-dashboard",
+                    icon: "mdi-note",
                 },
                 {
                     itemID: 4,
                     title: "About me",
-                    icon: "mdi-view-dashboard",
+                    icon: "mdi-account",
                 },
             ],
         };
