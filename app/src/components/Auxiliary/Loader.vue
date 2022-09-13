@@ -1,7 +1,7 @@
 <template>
     <v-overlay
     opacity="0.9"
-    :value="this.$store.state.isLoading"
+    :value="showLoader"
     >  
       <v-progress-circular
       indeterminate
@@ -13,5 +13,10 @@
 <script>
 export default {
     name: 'Loader',
+    computed: {
+      showLoader() {
+        return this.$store.state.isLoading;
+      },
+    },
 }
 </script>

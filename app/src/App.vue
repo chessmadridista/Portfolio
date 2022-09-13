@@ -1,16 +1,21 @@
 <template>
   <v-app>
+    <NavigationBar />
     <Loader />
-    <router-view />
+    <v-main>
+      <router-view />
+    </v-main>
   </v-app>
 </template>
 <script>
 import Loader from './components/Auxiliary/Loader.vue';
+import NavigationBar from './components/Auxiliary/NavigationBar.vue';
 
 export default {
   name: "App",
   components: {
     Loader,
+    NavigationBar,
   },
   data() {
     return {
@@ -18,6 +23,11 @@ export default {
     };
   },
   methods: {
+    startLoading() {
+      this.$store.dispatch("startLoading");
+
+      return true;
+    },
     endLoading() {
       setTimeout(() => {
         this.$store.dispatch("endLoading")
@@ -27,11 +37,16 @@ export default {
 
       return true;
     },
+    runLoadingCycle() {
+      this.startLoading();
+      this.endLoading();
+
+      return true;
+    },
   },
   watch: {
     $route() {
-      this.$store.dispatch("startLoading");
-      this.endLoading();
+      this.runLoadingCycle();
     },
   },
   mounted() {
@@ -41,4 +56,7 @@ export default {
 </script>
 
 <style lang="scss">
+#app {
+  background: #eeeeee;
+}
 </style>

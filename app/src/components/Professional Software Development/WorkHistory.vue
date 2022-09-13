@@ -1,6 +1,5 @@
 <template>
     <v-container>
-        <!-- TODO: Add the project tech stack used by separating them using bullet points in the same line. -->
         <div 
         v-for="experience of pastExperience"
         :key="experience.experienceID"
@@ -13,6 +12,12 @@
                 v-for="project of experience.projects"
                 :key="project.projectID"
                 >
+                    <v-card 
+                    class="pa-8"
+                    :class="elevateCard(project.projectActive)"
+                    @mouseover="project.projectActive = true"
+                    @mouseleave="project.projectActive = false"
+                    >
                     <h4>{{ project.projectName }}</h4>
                     <ul>
                         <li
@@ -26,11 +31,13 @@
                         <h5>Tech stack used:</h5>
                         <v-chip
                         v-for="techStack of project.projectTechStack"
+                        class="mt-2 mx-1"
                         :key="techStack"
                         >
                         {{ techStack }}
                         </v-chip>
                     </div>
+                    </v-card>
                 </v-timeline-item>
             </v-timeline>       
         </div>
@@ -43,13 +50,34 @@ export default {
     name: "WorkHistory",
     data() {
         return {
+            pageTitle: "Past work experience",
             pastExperience: pastExperience,
+            cardElevationLevel: "elevation-2",
         };
     },
     methods: {
         isTechStackUsed(techStack) {
             return techStack.length > 0;
         },
+        elevateCard(isProjectActive) {
+            let elevationClass;
+
+            if (isProjectActive) {
+                elevationClass = "elevation-8";
+            } else {
+                elevationClass = "elevation-2";
+            }
+
+            return elevationClass;
+        },
+        setPageTitle() {
+            this.$store.dispatch("changePageTitle", this.pageTitle);
+
+            return true;
+        },
+    },
+    mounted() {
+        this.setPageTitle();
     },
 };
 </script>
