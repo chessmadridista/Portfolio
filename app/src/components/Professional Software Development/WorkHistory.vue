@@ -31,6 +31,7 @@
                         <h5>Tech stack used:</h5>
                         <v-chip
                         v-for="techStack of project.projectTechStack"
+                        class="mt-2 mx-1"
                         :key="techStack"
                         >
                         {{ techStack }}
