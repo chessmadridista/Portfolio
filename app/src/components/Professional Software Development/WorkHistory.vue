@@ -49,6 +49,7 @@ export default {
     name: "WorkHistory",
     data() {
         return {
+            pageTitle: "Past work experience",
             pastExperience: pastExperience,
             cardElevationLevel: "elevation-2",
         };
@@ -68,8 +69,14 @@ export default {
 
             return elevationClass;
         },
+        setPageTitle() {
+            this.$store.dispatch("changePageTitle", this.pageTitle);
+
+            return true;
+        },
     },
-    computed: {
-    }
+    mounted() {
+        this.setPageTitle();
+    },
 };
 </script>
