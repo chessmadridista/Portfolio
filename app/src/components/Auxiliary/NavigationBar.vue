@@ -8,7 +8,7 @@
             <v-toolbar-title>{{ getPageTitle }}</v-toolbar-title>
         </v-app-bar>
         <v-navigation-drawer
-        absolute
+        fixed
         temporary
         v-model="drawer">
             <v-list nav>
