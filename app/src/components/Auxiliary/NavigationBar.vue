@@ -11,10 +11,12 @@
         absolute
         temporary
         v-model="drawer">
-            <v-list>
+            <v-list nav>
                 <v-list-item
                 v-for="item of menuItems"
                 :key="item.itemID"
+                link
+                :to="item.link"
                 >
                     <v-list-item-icon>
                         <v-icon>{{ item.icon }}</v-icon>
@@ -38,26 +40,31 @@ export default {
                     itemID: 0,
                     title: "Home",
                     icon: "mdi-view-dashboard",
+                    link: "/"
                 },
                 {
                     itemID: 1,
                     title: "Blog",
                     icon: "mdi-typewriter",
+                    link: "/blog"
                 },
                 {
                     itemID: 2,
                     title: "Projects",
                     icon: "mdi-notebook",
+                    link: "/projects"
                 },
                 {
                     itemID: 3,
                     title: "CV",
                     icon: "mdi-note",
+                    link: "/work-history"
                 },
                 {
                     itemID: 4,
                     title: "About me",
                     icon: "mdi-account",
+                    link: "/about"
                 },
             ],
         };

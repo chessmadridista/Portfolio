@@ -56,4 +56,7 @@ export default {
 </script>
 
 <style lang="scss">
+#app {
+  background: #eeeeee;
+}
 </style>
