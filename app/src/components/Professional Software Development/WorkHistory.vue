@@ -44,7 +44,7 @@
     </v-container>
 </template>
 <script>
-import pastExperience from '../../assets/Professional Software Development/pastExperience.json';
+import pastExperience from '../../assets/data/pastExperience.json';
 
 export default {
     name: "WorkHistory",
@@ -81,3 +81,11 @@ export default {
     },
 };
 </script>
+<style lang="scss" scoped>
+.v-card {
+    transition: box-shadow 1s, background 1s;
+}
+.elevation-8 {
+    background: rgb(214, 255, 214);
+}
+</style>
