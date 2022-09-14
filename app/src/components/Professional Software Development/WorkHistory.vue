@@ -50,7 +50,7 @@ export default {
     name: "WorkHistory",
     data() {
         return {
-            pageTitle: "Past work experience",
+            pageTitle: "CV",
             pastExperience: pastExperience,
             cardElevationLevel: "elevation-2",
         };
