@@ -5,13 +5,13 @@
 import UnderConstruction from './Auxiliary/UnderConstruction.vue';
 
 export default {
-    name: "Home",
+    name: "Blog",
     components: {
         UnderConstruction,
     },
     data() {
         return {
-            pageTitle: "Home",
+            pageTitle: "Blog",
         };
     },
     methods: {

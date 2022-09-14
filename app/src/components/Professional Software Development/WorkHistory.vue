@@ -8,7 +8,7 @@
             <p>{{ experience.startDate }} - {{ experience.endDate }}</p>
             <v-timeline>
                 <v-timeline-item
-                color="primary"    
+                color="#8ac7db"    
                 v-for="project of experience.projects"
                 :key="project.projectID"
                 >
@@ -44,13 +44,13 @@
     </v-container>
 </template>
 <script>
-import pastExperience from '../../assets/Professional Software Development/pastExperience.json';
+import pastExperience from '../../assets/data/pastExperience.json';
 
 export default {
     name: "WorkHistory",
     data() {
         return {
-            pageTitle: "Past work experience",
+            pageTitle: "CV",
             pastExperience: pastExperience,
             cardElevationLevel: "elevation-2",
         };
@@ -81,3 +81,11 @@ export default {
     },
 };
 </script>
+<style lang="scss" scoped>
+.v-card {
+    transition: box-shadow 1s, background 1s;
+}
+.elevation-8 {
+    background: rgb(214, 255, 214);
+}
+</style>
