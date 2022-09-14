@@ -11,6 +11,7 @@
         color="#000"
         fixed
         temporary
+        src="../../assets/images/Side Nav Background.jpg"
         v-model="drawer">
             <v-list 
             nav>
@@ -94,7 +95,7 @@ export default {
     transform: translateY(-50%);
     
     .v-list-item {
-        color: #fff !important;
+        color: #2ff !important;
         background: #222;
         transition: background 1s;
     }
