@@ -57,6 +57,6 @@ export default {
 
 <style lang="scss">
 #app {
-  background: #eeeeee;
+  background: #f0faff;
 }
 </style>
