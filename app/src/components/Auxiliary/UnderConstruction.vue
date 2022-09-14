@@ -47,9 +47,32 @@ export default {
     transform: translate(-50%, -50%);
     height: 220px;
     width: 600px;
+    animation-name: card-animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 
     .v-card__text {
         color: #000;
+    }
+}
+@keyframes card-animation {
+    0% {
+        background: rgb(255, 218, 224);
+    }
+    20% {
+        background: rgb(199, 255, 199);
+    }
+    40% {
+        background: rgb(255, 249, 190);
+    }
+    60% {
+        background: rgb(242, 199, 255);
+    }
+    80% {
+        background: rgb(206, 255, 255);
+    }
+    100% {
+        background: rgb(255, 218, 224);
     }
 }
 </style>
