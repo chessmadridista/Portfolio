@@ -1,10 +1,10 @@
 <template>
     <v-container>
         <v-app-bar
-        color="primary"
+        color="#256"
         app
         >
-            <v-app-bar-nav-icon @click="showMenu()" />
+            <v-app-bar-nav-icon color="#fff" @click="showMenu()" />
             <v-toolbar-title>{{ getPageTitle }}</v-toolbar-title>
         </v-app-bar>
         <v-navigation-drawer
@@ -81,3 +81,8 @@ export default {
     },
 }
 </script>
+<style lang="scss" scoped>
+.v-toolbar__title {
+    color: #fff;
+}
+</style>
