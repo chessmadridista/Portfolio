@@ -8,10 +8,12 @@
             <v-toolbar-title>{{ getPageTitle }}</v-toolbar-title>
         </v-app-bar>
         <v-navigation-drawer
+        color="#000"
         fixed
         temporary
         v-model="drawer">
-            <v-list nav>
+            <v-list 
+            nav>
                 <v-list-item
                 v-for="item of menuItems"
                 :key="item.itemID"
@@ -19,7 +21,7 @@
                 :to="item.link"
                 >
                     <v-list-item-icon>
-                        <v-icon>{{ item.icon }}</v-icon>
+                        <v-icon color="#2ff">{{ item.icon }}</v-icon>
                     </v-list-item-icon>
                     <v-list-item-content>
                         <v-list-item-title>{{ item.title }}</v-list-item-title>
@@ -84,5 +86,25 @@ export default {
 <style lang="scss" scoped>
 .v-toolbar__title {
     color: #fff;
+}
+.v-list {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    .v-list-item {
+        color: #fff !important;
+        background: #222;
+        transition: background 1s;
+    }
+    .v-list-item:hover {
+        background: rgb(64, 92, 101);
+    }
+    
+    .v-list-item--active {
+        color: #fff;
+        background: #256;
+    }
 }
 </style>
