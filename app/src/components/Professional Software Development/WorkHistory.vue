@@ -5,7 +5,7 @@
         :key="experience.experienceID"
         >
             <v-card 
-            color="#707070"
+            color="#5c5c5c"
             class="pt-5 pb-2 pl-8 role-container elevation-0">
                 <h3>{{ experience.role }} at {{ experience.company }}</h3>
                 <p>{{ experience.startDate }} - {{ experience.endDate }}</p>
