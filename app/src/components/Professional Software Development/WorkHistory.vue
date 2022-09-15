@@ -4,8 +4,12 @@
         v-for="experience of pastExperience"
         :key="experience.experienceID"
         >
-            <h3>{{ experience.role }} at {{ experience.company }}</h3>
-            <p>{{ experience.startDate }} - {{ experience.endDate }}</p>
+            <v-card 
+            color="#707070"
+            class="pt-5 pb-2 pl-8 role-container elevation-0">
+                <h3>{{ experience.role }} at {{ experience.company }}</h3>
+                <p>{{ experience.startDate }} - {{ experience.endDate }}</p>
+            </v-card>
             <v-timeline>
                 <v-timeline-item
                 color="#8ac7db"    
@@ -84,6 +88,11 @@ export default {
 <style lang="scss" scoped>
 .v-card {
     transition: box-shadow 1s, background 1s;
+
+}
+.role-container h3, 
+.role-container p {
+    color: #fff;
 }
 .elevation-8 {
     background: rgb(214, 255, 214);
