@@ -2,6 +2,7 @@
     <v-overlay
     opacity="1"
     :value="showLoader"
+    z-index="7"
     >  
       <v-progress-circular
       indeterminate
