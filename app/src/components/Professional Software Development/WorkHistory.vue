@@ -10,9 +10,10 @@
                 <h3>{{ experience.role }} at {{ experience.company }}</h3>
                 <p>{{ experience.startDate }} - {{ experience.endDate }}</p>
             </v-card>
-            <v-timeline dense>
+            <v-timeline 
+            :dense="isTimelineDense">
                 <v-timeline-item
-                small
+                :small="isTimelineDense"
                 color="#8ac7db"    
                 v-for="project of experience.projects"
                 :key="project.projectID"
@@ -79,6 +80,31 @@ export default {
             this.$store.dispatch("changePageTitle", this.pageTitle);
 
             return true;
+        },
+    },
+    computed: {
+        isTimelineDense() {
+            let isDense;
+            
+            switch (this.$vuetify.breakpoint.name) {
+                case 'xs': 
+                    isDense = true; 
+                    break;
+                case 'sm': 
+                    isDense = true; 
+                    break;
+                case 'md': 
+                    isDense = false;
+                    break;
+                case 'lg': 
+                    isDense = false;
+                    break;
+                case 'xl': 
+                    isDense = false;
+                    break;
+            }
+
+            return isDense;
         },
     },
     mounted() {
