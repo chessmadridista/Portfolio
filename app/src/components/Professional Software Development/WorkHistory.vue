@@ -10,8 +10,9 @@
                 <h3>{{ experience.role }} at {{ experience.company }}</h3>
                 <p>{{ experience.startDate }} - {{ experience.endDate }}</p>
             </v-card>
-            <v-timeline>
+            <v-timeline dense>
                 <v-timeline-item
+                small
                 color="#8ac7db"    
                 v-for="project of experience.projects"
                 :key="project.projectID"
