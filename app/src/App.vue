@@ -23,11 +23,6 @@ export default {
     };
   },
   methods: {
-    startLoading() {
-      this.$store.dispatch("startLoading");
-
-      return true;
-    },
     endLoading() {
       setTimeout(() => {
         this.$store.dispatch("endLoading")
@@ -36,17 +31,6 @@ export default {
       }, 1500);
 
       return true;
-    },
-    runLoadingCycle() {
-      this.startLoading();
-      this.endLoading();
-
-      return true;
-    },
-  },
-  watch: {
-    $route() {
-      this.runLoadingCycle();
     },
   },
   mounted() {
