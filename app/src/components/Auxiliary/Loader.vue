@@ -1,6 +1,6 @@
 <template>
     <v-overlay
-    opacity="0.9"
+    opacity="1"
     :value="showLoader"
     >  
       <v-progress-circular
