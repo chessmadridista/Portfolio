@@ -42,11 +42,18 @@ const router = new VueRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  store.dispatch('startLoading');
+  store.dispatch('startLoading')
+  .then(() => {
+    setTimeout(() => {
+      next();
+    }, 500);
+  });
+});
+
+router.afterEach(() => {
   setTimeout(() => {
-    next();
     store.dispatch('endLoading');
-  }, 1500);
+  }, 500);
 });
 
 export default router
