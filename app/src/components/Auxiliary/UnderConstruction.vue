@@ -26,10 +26,12 @@ export default {
     position: fixed;
     top: 0;
     left: 0;
+    height: 100vh;
+    width: 100vw;
 
     img {
-        max-height: 100%;
-        max-width: 100%;
+        height: 100vh;
+        width: 100vw;
     }
 }
 .image__dimmer {
