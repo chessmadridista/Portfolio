@@ -88,7 +88,6 @@ export default {
 <style lang="scss" scoped>
 .v-card {
     transition: box-shadow 1s, background 1s;
-
 }
 .role-container h3, 
 .role-container p {
