@@ -24,4 +24,4 @@ rm -r dist
 git checkout dev -f
 
 # 8. Delete 'gh-pages' branch.
-git -D gh-pages
+git branch -D gh-pages
