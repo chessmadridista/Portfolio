@@ -1,0 +1,32 @@
+[
+    {
+        "itemID": 0,
+        "title": "Home",
+        "icon": "mdi-view-dashboard",
+        "link": "/"
+    },
+    {
+        "itemID": 1,
+        "title": "Blog",
+        "icon": "mdi-typewriter",
+        "link": "/blog"
+    },
+    {
+        "itemID": 2,
+        "title": "Projects",
+        "icon": "mdi-notebook",
+        "link": "/projects"
+    },
+    {
+        "itemID": 3,
+        "title": "CV",
+        "icon": "mdi-note",
+        "link": "/cv"
+    },
+    {
+        "itemID": 4,
+        "title": "About me",
+        "icon": "mdi-account",
+        "link": "/about"
+    }
+]

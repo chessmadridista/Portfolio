@@ -37,6 +37,7 @@
                         <h5>Tech stack used:</h5>
                         <v-chip
                         v-for="techStack of project.projectTechStack"
+                        color="#d7e2e8"
                         class="mt-2 mx-1"
                         :key="techStack"
                         >

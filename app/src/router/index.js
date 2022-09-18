@@ -26,7 +26,7 @@ const routes = [
     component: Projects,
   },
   {
-    path: '/work-history',
+    path: '/cv',
     name: 'Work History',
     component: WorkHistory,
   },
