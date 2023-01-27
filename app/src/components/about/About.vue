@@ -2,16 +2,16 @@
     <UnderConstruction />
 </template>
 <script>
-import UnderConstruction from './Auxiliary/UnderConstruction.vue';
+import UnderConstruction from '../auxiliary/UnderConstruction.vue';
 
 export default {
-    name: "Blog",
+    name: "About",
     components: {
         UnderConstruction,
     },
     data() {
         return {
-            pageTitle: "Blog",
+            pageTitle: "About me",
         };
     },
     methods: {

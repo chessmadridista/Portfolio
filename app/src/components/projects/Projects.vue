@@ -2,7 +2,7 @@
     <UnderConstruction />
 </template>
 <script>
-import UnderConstruction from './Auxiliary/UnderConstruction.vue';
+import UnderConstruction from '../auxiliary/UnderConstruction.vue';
 
 export default {
     name: "Projects",
