@@ -8,8 +8,8 @@
   </v-app>
 </template>
 <script>
-import Loader from './components/Auxiliary/Loader.vue';
-import NavigationBar from './components/Auxiliary/NavigationBar.vue';
+import Loader from './components/auxiliary/Loader.vue';
+import NavigationBar from './components/auxiliary/NavigationBar.vue';
 
 export default {
   name: "App",

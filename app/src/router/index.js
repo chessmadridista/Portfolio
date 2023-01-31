@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../components/Home.vue';
-import Blog from '../components/Blog.vue';
-import Projects from '../components/Projects.vue';
-import WorkHistory from '../components/Professional Software Development/WorkHistory.vue';
-import About from '../components/About.vue';
+import Home from '../components/home/Home.vue';
+import Blog from '../components/blog/Blog.vue';
+import Projects from '../components/projects/Projects.vue';
+import WorkHistory from '../components/cv/WorkHistory.vue';
+import About from '../components/about/About.vue';
 import store from '../store/store.js';
 
 Vue.use(VueRouter)
