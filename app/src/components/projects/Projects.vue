@@ -19,6 +19,10 @@
                             </template>
                             <v-card-subtitle>{{ project.summary }}</v-card-subtitle>
                         </v-tooltip>
+                        <v-card-text class="text-center">
+                            <v-chip small outlined color="error" v-if="project.isUnderDevelopment">Currently under development</v-chip>
+                            <v-chip small outlined color="success" v-else>Partially developed</v-chip>
+                        </v-card-text>
                     </v-card>
                 </v-col>
             </v-row>
@@ -41,7 +45,7 @@ export default {
                     title: "Sigma Goal Tracker",
                     summary: "Track your goals by breaking them down into simple tasks.",
                     link: "",
-                    isUnderDevelopment: true,
+                    isUnderDevelopment: false,
                 },
                 {
                     id: 1,
