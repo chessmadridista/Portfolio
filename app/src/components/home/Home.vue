@@ -1,14 +1,9 @@
 <template>
-    <UnderConstruction />
+    <v-card></v-card>
 </template>
 <script>
-import UnderConstruction from '../auxiliary/UnderConstruction.vue';
-
 export default {
     name: "Home",
-    components: {
-        UnderConstruction,
-    },
     data() {
         return {
             pageTitle: "Home",
