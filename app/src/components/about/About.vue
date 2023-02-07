@@ -33,10 +33,10 @@
                     </v-row>
                     <v-row>
                         <v-col>
-                            <v-btn text color="error">Reset</v-btn>
+                            <v-btn text color="error" @click=reset()>Reset</v-btn>
                         </v-col>
                         <v-col class="text-right">
-                            <v-btn color="primary" class="text-right">Send</v-btn>
+                            <v-btn color="primary" class="text-right" @click="send()">Send</v-btn>
                         </v-col>
                     </v-row>
                 </v-form>
