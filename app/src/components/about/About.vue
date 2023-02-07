@@ -64,6 +64,7 @@ export default {
             this.$store.dispatch("changePageTitle", this.pageTitle);
         },
         reset() {
+            this.$store.dispatch("showSnackbar");
             this.$refs.form.reset();
         },
     },

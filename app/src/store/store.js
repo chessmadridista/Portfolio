@@ -7,6 +7,9 @@ const store = new Vuex.Store({
     state: {
         isLoading: true,
         pageTitle: "",
+        snackbar: false,
+        snackbarColor: "success",
+        snackbarMessage: "The form has been reset successfully!",
     },
     mutations: {
         START_LOADING(state) {
@@ -18,22 +21,28 @@ const store = new Vuex.Store({
         SET_PAGE_TITLE(state, pageTitle) {
             state.pageTitle = pageTitle;
         },
+        SHOW_SNACKBAR(state) {
+            state.snackbar = true;
+        },
+        CLOSE_SNACKBAR(state) {
+            state.snackbar = false;
+        },
     },
     actions: {
         startLoading(context) {
             context.commit("START_LOADING");
-
-            return true;
         },
         endLoading(context) {
             context.commit("END_LOADING");
-
-            return true;
         },
         changePageTitle(context, pageTitle) {
             context.commit("SET_PAGE_TITLE", pageTitle);
-
-            return true;
+        },
+        showSnackbar(context) {
+            context.commit("SHOW_SNACKBAR");
+        },
+        closeSnackbar(context) {
+            context.commit("CLOSE_SNACKBAR");
         },
     },
 });
