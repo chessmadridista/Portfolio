@@ -7,27 +7,29 @@
                 <v-form ref="form" class="mt-10">
                     <v-row>
                         <v-col md="6">
-                            <v-text-field outlined label="First name" type="text"></v-text-field>
+                            <v-text-field v-model="firstName" outlined label="First name" type="text" clearable></v-text-field>
                         </v-col>
                         <v-col md="6">
-                            <v-text-field outlined label="Last name" type="text"></v-text-field>
+                            <v-text-field v-model="lastName" outlined label="Last name" type="text" clearable></v-text-field>
                         </v-col>
                         <v-col md="6">
-                            <v-text-field outlined label="Email" type="email"></v-text-field>
+                            <v-text-field v-model="email" outlined label="Email" type="email" clearable></v-text-field>
                         </v-col>
                         <v-col md="6">
-                            <v-text-field outlined label="Phone" type="number"></v-text-field>
+                            <v-text-field v-model="phone" outlined label="Phone" type="number" clearable></v-text-field>
                         </v-col>
                     </v-row>
                     <v-row>
                         <v-col>
                             <v-textarea 
+                            v-model="message"
                             counter="500"
                             outlined 
                             label="Message*"
                             placeholder="Hello, I would like to collaborate on the background music theme for my play..."
                             max="20"
                             required
+                            clearable
                             ></v-textarea>
                         </v-col>
                     </v-row>
@@ -50,6 +52,11 @@ export default {
     data() {
         return {
             pageTitle: "About me",
+            firstName: "",
+            lastName: "",
+            email: "",
+            phone: "",
+            message: "",
         };
     },
     methods: {
