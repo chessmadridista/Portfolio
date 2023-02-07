@@ -4,7 +4,7 @@
             <v-card-title class="blue--text justify-center">About Me</v-card-title>
             <v-card-text>
                 <p>Hi, I am Lavanya and my main passion is music but I also like to work on software development projects and I also write articles on the side as well. Feel free to send me a note using the form below :&#41;.</p>
-                <v-form class="mt-10">
+                <v-form ref="form" class="mt-10">
                     <v-row>
                         <v-col md="6">
                             <v-text-field outlined label="First name" type="text"></v-text-field>
@@ -55,6 +55,9 @@ export default {
     methods: {
         setPageTitle() {
             this.$store.dispatch("changePageTitle", this.pageTitle);
+        },
+        reset() {
+            this.$refs.form.reset();
         },
     },
     mounted() {
