@@ -1,7 +1,8 @@
 <template>
   <v-app>
-    <NavigationBar />
     <Loader />
+    <SnackBar />
+    <NavigationBar />
     <v-main>
       <router-view />
     </v-main>
@@ -9,12 +10,14 @@
 </template>
 <script>
 import Loader from './components/auxiliary/Loader.vue';
+import SnackBar from './components/auxiliary/Snackbar.vue';
 import NavigationBar from './components/auxiliary/NavigationBar.vue';
 
 export default {
   name: "App",
   components: {
     Loader,
+    SnackBar,
     NavigationBar,
   },
   data() {
