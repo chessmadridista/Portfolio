@@ -58,14 +58,9 @@ const store = new Vuex.Store({
         },
         // startSnackbarTransition(context, { color, message }) {
         startSnackbarTransition(context, { color, message }) {
-            console.log("HEHE");
-            // console.log(color);
-            // console.log(message);
             context.dispatch('setSnackbarColor', color);
             context.dispatch('setSnackbarMessage', message);
             context.dispatch('showSnackbar');
-            console.log("HEHEe");
-
         },
     },
 });
