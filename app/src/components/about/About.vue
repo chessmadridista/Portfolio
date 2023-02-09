@@ -98,6 +98,7 @@ export default {
                 this.appendField("phone", formData);
                 this.appendField("message", formData);
                 this.submitForm(formData);
+                this.$refs.form.reset();
                 snackbarColor = "success"
                 snackbarMessage = "You form has been submitted successfully! :)";          
             }
