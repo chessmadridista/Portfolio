@@ -79,6 +79,13 @@ export default {
                 formData.append(field, this[field]);
             }
         },
+        submitForm(formData) {
+            const URL = "https://api.nostalgician.in/about";
+            this.axios.post(URL, formData)
+            .then((response) => {
+                console.log(response);
+            });
+        },
         send() {
             let formData = new FormData();
             let snackbarColor;
@@ -93,6 +100,7 @@ export default {
                 this.appendField("email", formData);
                 this.appendField("phone", formData);
                 this.appendField("message", formData);
+                this.submitForm(formData);
                 snackbarColor = "success"
                 snackbarMessage = "You form has been submitted successfully! :)";          
             }
