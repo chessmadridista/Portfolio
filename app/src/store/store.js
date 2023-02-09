@@ -56,7 +56,6 @@ const store = new Vuex.Store({
         closeSnackbar(context) {
             context.commit("CLOSE_SNACKBAR");
         },
-        // startSnackbarTransition(context, { color, message }) {
         startSnackbarTransition(context, { color, message }) {
             context.dispatch('setSnackbarColor', color);
             context.dispatch('setSnackbarMessage', message);
