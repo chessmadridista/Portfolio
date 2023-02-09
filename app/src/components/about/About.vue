@@ -47,6 +47,8 @@
     </v-container>
 </template>
 <script>
+import { mapActions } from 'vuex';
+
 export default {
     name: "About",
     data() {
@@ -60,12 +62,42 @@ export default {
         };
     },
     methods: {
+        ...mapActions([
+            'startSnackbarTransition',
+        ]),
         setPageTitle() {
             this.$store.dispatch("changePageTitle", this.pageTitle);
         },
         reset() {
-            this.$store.dispatch("showSnackbar");
             this.$refs.form.reset();
+            const SNACKBAR_COLOR = "success";
+            const SNACKBAR_MESSAGE = "Your form has been reset successfully!";
+            this.startSnackbarTransition({ color: SNACKBAR_COLOR, message: SNACKBAR_MESSAGE });
+        },
+        appendField(field, formData) {
+            if (this[field] !== "") {
+                formData.append(field, this[field]);
+            }
+        },
+        send() {
+            let formData = new FormData();
+            let snackbarColor;
+            let snackbarMessage;
+
+            if (this.message === "" || this.message === null) {
+                snackbarColor = "error";
+                snackbarMessage = "Please let the words flow out of your fingers (write something in the message).";
+            } else {
+                this.appendField("firstName", formData);
+                this.appendField("lastName", formData);
+                this.appendField("email", formData);
+                this.appendField("phone", formData);
+                this.appendField("message", formData);
+                snackbarColor = "success"
+                snackbarMessage = "You form has been submitted successfully! :)";          
+            }
+
+            this.startSnackbarTransition({ color: snackbarColor, message: snackbarMessage });
         },
     },
     mounted() {

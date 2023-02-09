@@ -21,6 +21,12 @@ const store = new Vuex.Store({
         SET_PAGE_TITLE(state, pageTitle) {
             state.pageTitle = pageTitle;
         },
+        SET_SNACKBAR_COLOR(state, color) {
+            state.snackbarColor = color;
+        },
+        SET_SNACKBAR_MESSAGE(state, message) {
+            state.snackbarMessage = message;
+        },
         SHOW_SNACKBAR(state) {
             state.snackbar = true;
         },
@@ -38,11 +44,28 @@ const store = new Vuex.Store({
         changePageTitle(context, pageTitle) {
             context.commit("SET_PAGE_TITLE", pageTitle);
         },
+        setSnackbarColor(context, color) {
+            context.commit("SET_SNACKBAR_COLOR", color);
+        },
+        setSnackbarMessage(context, message) {
+            context.commit("SET_SNACKBAR_MESSAGE", message);
+        },
         showSnackbar(context) {
             context.commit("SHOW_SNACKBAR");
         },
         closeSnackbar(context) {
             context.commit("CLOSE_SNACKBAR");
+        },
+        // startSnackbarTransition(context, { color, message }) {
+        startSnackbarTransition(context, { color, message }) {
+            console.log("HEHE");
+            // console.log(color);
+            // console.log(message);
+            context.dispatch('setSnackbarColor', color);
+            context.dispatch('setSnackbarMessage', message);
+            context.dispatch('showSnackbar');
+            console.log("HEHEe");
+
         },
     },
 });
