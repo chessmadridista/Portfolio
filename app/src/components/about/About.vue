@@ -81,10 +81,7 @@ export default {
         },
         submitForm(formData) {
             const URL = "https://api.nostalgician.in/about";
-            this.axios.post(URL, formData)
-            .then((response) => {
-                console.log(response);
-            });
+            this.axios.post(URL, formData);
         },
         send() {
             let formData = new FormData();
