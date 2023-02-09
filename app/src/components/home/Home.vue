@@ -1,10 +1,10 @@
 <template>
-    <v-card width="90%" class="mx-auto pb-16 px-12" tile>
+    <v-card width="90%" class="mx-auto pb-md-16 px-md-12" tile>
         <v-card-title class="justify-center primary--text">Home</v-card-title>
         <v-card-subtitle class="text-center">Please select an area of your interest</v-card-subtitle>
-        <v-card-text class="mt-12">
+        <v-card-text class="mt-md-12">
             <v-row>
-                <v-col v-for="page of appPages" :key="page.id" cols="3">
+                <v-col v-for="page of appPages" :key="page.id" cols="12" sm="6" md="3">
                     <v-card link :to="page.link">
                         <v-img height="200" :src="page.backgroundImg"></v-img>
                         <v-card-title class="justify-center primary--text">{{ page.title }}</v-card-title>
