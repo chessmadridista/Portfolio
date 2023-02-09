@@ -1,26 +1,26 @@
 <template>
     <v-container>
-        <v-card class="pa-6 mb-8">
+        <v-card class="pa-2 pa-sm-4 pa-md-6 mb-8">
             <v-card-title class="blue--text justify-center">About Me</v-card-title>
             <v-card-text>
                 <p>Hi, I am Lavanya and my main passion is music but I also like to work on software development projects and I also write articles on the side as well. Feel free to send me a note using the form below :&#41;.</p>
                 <v-form ref="form" class="mt-10">
                     <v-row>
-                        <v-col md="6">
+                        <v-col cols="12" md="6">
                             <v-text-field v-model="firstName" outlined label="First name" type="text" clearable></v-text-field>
                         </v-col>
-                        <v-col md="6">
+                        <v-col cols="12" md="6">
                             <v-text-field v-model="lastName" outlined label="Last name" type="text" clearable></v-text-field>
                         </v-col>
-                        <v-col md="6">
+                        <v-col cols="12" md="6">
                             <v-text-field v-model="email" outlined label="Email" type="email" clearable></v-text-field>
                         </v-col>
-                        <v-col md="6">
+                        <v-col cols="12" md="6">
                             <v-text-field v-model="phone" outlined label="Phone" type="number" clearable></v-text-field>
                         </v-col>
                     </v-row>
                     <v-row>
-                        <v-col>
+                        <v-col cols="12">
                             <v-textarea 
                             v-model="message"
                             counter="500"
