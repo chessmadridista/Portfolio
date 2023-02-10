@@ -33,7 +33,7 @@ export default {
                 {
                     id: 0,
                     backgroundImg: "https://miro.medium.com/max/640/1*YrDjozYKntNmosbP8mQxdg.webp",
-                    title: "Why you should play chess?",
+                    title: "6 reasons to start playing chess",
                     link: "https://medium.com/@lavanyamishra1996/why-should-you-play-chess-163873b8305b",
                 },
             ],
