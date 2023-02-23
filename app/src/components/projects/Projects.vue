@@ -1,12 +1,12 @@
 <template>
-    <v-card width="90%" tile class="mx-auto px-4 elevation-0">
+    <v-card width="90%" class="rounded-xl mx-auto px-4">
         <v-card-title class="blue--text justify-center">Projects</v-card-title>
         <v-card-subtitle class="text-center">Here are some of my creations</v-card-subtitle>
         <v-card-text>
             <v-row>
                 <v-col cols="12" sm="6" md="4" v-for="project of projects"
                 :key="project.id">
-                    <v-card class="page-card" :href="project.link" target="_blank">
+                    <v-card class="page-card rounded-lg" :href="project.link" target="_blank">
                         <v-img height="200"
                         :src="project.backgroundImg">
                         </v-img>
@@ -154,6 +154,7 @@ export default {
 }
 .page-card {
     transition: 1s;
+    background: rgb(244, 244, 255);
 }
 .page-card:hover {
     background: rgb(224, 226, 255);

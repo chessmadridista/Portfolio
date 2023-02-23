@@ -18,6 +18,7 @@
                 <v-list-item
                 v-for="item of menuItems"
                 :key="item.itemID"
+                class="rounded-lg"
                 link
                 :to="item.link"
                 >
