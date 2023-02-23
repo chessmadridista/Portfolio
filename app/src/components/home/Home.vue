@@ -63,6 +63,6 @@ export default {
     transition: 1s;
 }
 .page-card:hover {
-    background: rgb(212, 214, 255);
+    background: rgb(224, 226, 255);
 }
 </style>

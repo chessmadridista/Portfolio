@@ -6,7 +6,7 @@
             <v-row>
                 <v-col cols="12" sm="6" md="4" v-for="project of projects"
                 :key="project.id">
-                    <v-card :href="project.link" target="_blank">
+                    <v-card class="page-card" :href="project.link" target="_blank">
                         <v-img height="200"
                         :src="project.backgroundImg">
                         </v-img>
@@ -151,5 +151,11 @@ export default {
 <style scoped>
 .v-image {
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+}
+.page-card {
+    transition: 1s;
+}
+.page-card:hover {
+    background: rgb(224, 226, 255);
 }
 </style>
