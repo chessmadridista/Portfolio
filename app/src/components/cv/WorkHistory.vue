@@ -6,7 +6,7 @@
         >
             <v-card 
             color="#5c5c5c"
-            class="pt-5 pb-2 pl-8 role-container elevation-0">
+            class="rounded-lg pt-5 pb-2 pl-8 role-container elevation-0">
                 <h3>{{ experience.role }} at {{ experience.company }}</h3>
                 <p>{{ experience.startDate }} - {{ experience.endDate }}</p>
             </v-card>
@@ -19,12 +19,12 @@
                 :key="project.projectID"
                 >
                     <v-card 
-                    class="pa-8"
+                    class="pa-8 rounded-lg"
                     :class="elevateCard(project.projectActive)"
                     @mouseover="project.projectActive = true"
                     @mouseleave="project.projectActive = false"
                     >
-                    <h4>{{ project.projectName }}</h4>
+                    <h4 class="project-name">{{ project.projectName }}</h4>
                     <ul>
                         <li
                         v-for="responsibility of project.projectResponsibility"
@@ -116,6 +116,9 @@ export default {
 <style lang="scss" scoped>
 .v-card {
     transition: box-shadow 1s, background 1s;
+}
+.project-name {
+    color: #006087;
 }
 .role-container h3, 
 .role-container p {
