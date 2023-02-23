@@ -5,7 +5,7 @@
         <v-card-text class="mt-md-12">
             <v-row>
                 <v-col v-for="page of appPages" :key="page.id" cols="12" sm="6" md="3">
-                    <v-card link :to="page.link">
+                    <v-card class="page-card" link :to="page.link">
                         <v-img height="200" :src="page.backgroundImg"></v-img>
                         <v-card-title class="justify-center primary--text">{{ page.title }}</v-card-title>
                     </v-card>
@@ -58,3 +58,11 @@ export default {
     },
 }
 </script>
+<style scoped>
+.page-card {
+    transition: 1s;
+}
+.page-card:hover {
+    background: rgb(212, 214, 255);
+}
+</style>
