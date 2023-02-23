@@ -36,10 +36,10 @@
                     </v-row>
                     <v-row>
                         <v-col>
-                            <v-btn text class="rounded-lg" color="error" @click=reset()><v-icon left>mdi-rotate-left</v-icon>Reset</v-btn>
+                            <v-btn text class="rounded-lg text-none" color="error" @click=reset()><v-icon left>mdi-rotate-left</v-icon>Reset</v-btn>
                         </v-col>
                         <v-col class="text-right">
-                            <v-btn color="primary" class="rounded-lg" @click="send()"><v-icon left>mdi-check</v-icon>Send</v-btn>
+                            <v-btn color="primary" class="rounded-lg text-none" @click="send()"><v-icon left>mdi-check</v-icon>Send</v-btn>
                         </v-col>
                     </v-row>
                 </v-form>
