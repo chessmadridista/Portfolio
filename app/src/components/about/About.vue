@@ -1,27 +1,28 @@
 <template>
     <v-container>
-        <v-card class="pa-2 pa-sm-4 pa-md-6 mb-8">
+        <v-card class="rounded-xl pa-2 pa-sm-4 pa-md-6 mb-8">
             <v-card-title class="blue--text justify-center">About Me</v-card-title>
             <v-card-text>
                 <p>Hi, I am Lavanya and my main passion is music but I also like to work on software development projects and I also write articles on the side as well. Feel free to send me a note using the form below :&#41;.</p>
                 <v-form ref="form" class="mt-10">
                     <v-row>
                         <v-col cols="12" md="6">
-                            <v-text-field v-model="firstName" outlined label="First name" type="text" clearable></v-text-field>
+                            <v-text-field class="rounded-lg" v-model="firstName" outlined label="First name" type="text" clearable></v-text-field>
                         </v-col>
                         <v-col cols="12" md="6">
-                            <v-text-field v-model="lastName" outlined label="Last name" type="text" clearable></v-text-field>
+                            <v-text-field class="rounded-lg" v-model="lastName" outlined label="Last name" type="text" clearable></v-text-field>
                         </v-col>
                         <v-col cols="12" md="6">
-                            <v-text-field v-model="email" outlined label="Email" type="email" clearable></v-text-field>
+                            <v-text-field class="rounded-lg" v-model="email" outlined label="Email" type="email" clearable></v-text-field>
                         </v-col>
                         <v-col cols="12" md="6">
-                            <v-text-field v-model="phone" outlined label="Phone" type="number" clearable></v-text-field>
+                            <v-text-field class="rounded-lg" v-model="phone" outlined label="Phone" type="number" clearable></v-text-field>
                         </v-col>
                     </v-row>
                     <v-row>
                         <v-col cols="12">
                             <v-textarea 
+                            class="rounded-lg"
                             v-model="message"
                             counter="500"
                             outlined 
@@ -35,10 +36,10 @@
                     </v-row>
                     <v-row>
                         <v-col>
-                            <v-btn text color="error" @click=reset()>Reset</v-btn>
+                            <v-btn text class="rounded-lg text-none" color="error" @click=reset()><v-icon left>mdi-rotate-left</v-icon>Reset</v-btn>
                         </v-col>
                         <v-col class="text-right">
-                            <v-btn color="primary" class="text-right" @click="send()">Send</v-btn>
+                            <v-btn color="primary" class="rounded-lg text-none" @click="send()"><v-icon left>mdi-check</v-icon>Send</v-btn>
                         </v-col>
                     </v-row>
                 </v-form>

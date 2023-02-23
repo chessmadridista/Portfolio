@@ -1,6 +1,6 @@
 <template>
     <v-container>
-        <v-card tile class="elevation-0 px-md-12 pb-2">
+        <v-card class="rounded-xl px-md-12 pb-12">
             <v-card-title class="blue--text justify-center">
                 Blog
             </v-card-title>
@@ -10,7 +10,7 @@
             <v-card-text>
                 <v-row>
                     <v-col cols="12" sm="6" v-for="article of articles" :key="article.id">
-                        <v-card link :href="article.link" target="_blank">
+                        <v-card class="page-card rounded-lg" link :href="article.link" target="_blank">
                             <v-img height="200" :src="article.backgroundImg"></v-img>
                             <v-card-title class="blue--text justify-center">
                                 {{ article.title }}
@@ -58,5 +58,12 @@ export default {
 <style scoped>
 .v-image {
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+}
+.page-card {
+    transition: 1s;
+    background: rgb(244, 244, 255);
+}
+.page-card:hover {
+    background: rgb(224, 226, 255);
 }
 </style>
