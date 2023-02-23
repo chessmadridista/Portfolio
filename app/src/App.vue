@@ -64,5 +64,6 @@ main {
 }
 #app {
   background: #f0faff;
+  font-family: fantasy;
 }
 </style>
