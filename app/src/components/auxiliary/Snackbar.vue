@@ -25,3 +25,8 @@ export default {
     },
 }
 </script>
+<style lang="scss" scoped>
+::v-deep .v-snack__wrapper {
+    transition: 0.5s;
+}
+</style>
