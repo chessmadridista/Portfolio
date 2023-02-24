@@ -21,3 +21,8 @@ export default {
     },
 }
 </script>
+<style lang="scss" scoped>
+.v-overlay {
+  transition: 0.5s;
+}
+</style>
