@@ -5,7 +5,6 @@ import Blog from '../components/blog/Blog.vue';
 import Projects from '../components/projects/Projects.vue';
 import WorkHistory from '../components/cv/WorkHistory.vue';
 import About from '../components/about/About.vue';
-import store from '../store/store.js';
 
 Vue.use(VueRouter)
 
@@ -40,20 +39,5 @@ const routes = [
 const router = new VueRouter({
   routes
 })
-
-router.beforeEach((to, from, next) => {
-  store.dispatch('startLoading')
-  .then(() => {
-    setTimeout(() => {
-      next();
-    }, 500);
-  });
-});
-
-router.afterEach(() => {
-  setTimeout(() => {
-    store.dispatch('endLoading');
-  }, 500);
-});
 
 export default router
