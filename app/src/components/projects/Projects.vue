@@ -30,15 +30,6 @@
                     </v-row>
                 </v-container>
             </v-card-text>
-            <v-card-actions>
-                <v-container>
-                    <v-row>
-                        <v-col>
-                            <v-btn block color="primary" class="text-none rounded-lg">Start an Open Source project with me :&#41;</v-btn>
-                        </v-col>
-                    </v-row>
-                </v-container>
-            </v-card-actions>
         </v-card>
     </v-container>
 </template>
