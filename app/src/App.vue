@@ -17,25 +17,6 @@ export default {
     SnackBar,
     NavigationBar,
   },
-  data() {
-    return {
-
-    };
-  },
-  methods: {
-    endLoading() {
-      setTimeout(() => {
-        this.$store.dispatch("endLoading")
-        .then(() => {
-        });
-      }, 1500);
-
-      return true;
-    },
-  },
-  mounted() {
-    this.endLoading();
-  },
 };
 </script>
 
