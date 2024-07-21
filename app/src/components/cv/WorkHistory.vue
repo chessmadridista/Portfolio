@@ -1,54 +1,11 @@
 <template>
-    <v-container>
-        <div 
-        v-for="experience of pastExperience"
-        :key="experience.experienceID"
-        >
-            <v-card 
-            color="#5c5c5c"
-            class="rounded-lg pt-5 pb-2 pl-8 role-container elevation-0">
-                <h3>{{ experience.role }} at {{ experience.company }}</h3>
-                <p>{{ experience.startDate }} - {{ experience.endDate }}</p>
-            </v-card>
-            <v-timeline 
-            :dense="isTimelineDense">
-                <v-timeline-item
-                :small="isTimelineDense"
-                color="#8ac7db"    
-                v-for="project of experience.projects"
-                :key="project.projectID"
-                >
-                    <v-card 
-                    class="pa-8 rounded-lg"
-                    :class="elevateCard(project.projectActive)"
-                    @mouseover="project.projectActive = true"
-                    @mouseleave="project.projectActive = false"
-                    >
-                    <h4 class="project-name">{{ project.projectName }}</h4>
-                    <ul>
-                        <li
-                        v-for="responsibility of project.projectResponsibility"
-                        :key="responsibility.projectRespID"
-                        >
-                            <p>{{ responsibility.projectRespDescription }}</p>
-                        </li>
-                    </ul>
-                    <div v-if="isTechStackUsed(project.projectTechStack)">
-                        <h5>Tech stack used:</h5>
-                        <v-chip
-                        v-for="techStack of project.projectTechStack"
-                        color="#d7e2e8"
-                        class="mt-2 mx-1"
-                        :key="techStack"
-                        >
-                        {{ techStack }}
-                        </v-chip>
-                    </div>
-                    </v-card>
-                </v-timeline-item>
-            </v-timeline>       
-        </div>
-    </v-container>
+    <iframe
+        src="/Lavanya Mishra Latest Resume.pdf"
+        type="application/pdf"
+        height="100%"
+        width="100%"
+        frameborder="0"
+    />
 </template>
 <script>
 import pastExperience from '../../assets/data/pastExperience.json';
