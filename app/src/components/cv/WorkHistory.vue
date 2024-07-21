@@ -1,11 +1,11 @@
 <template>
-        <iframe
-            src="/Lavanya Mishra Latest Resume.pdf"
-            type="application/pdf"
-            height="100%"
-            width="100%"
-            frameborder="0"
-        />
+    <iframe
+        src="/Lavanya Mishra Latest Resume.pdf"
+        type="application/pdf"
+        height="100%"
+        width="100%"
+        frameborder="0"
+    />
 </template>
 <script>
 import pastExperience from '../../assets/data/pastExperience.json';
