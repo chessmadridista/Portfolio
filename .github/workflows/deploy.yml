@@ -1,0 +1,30 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: SSH into server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            tmux has-session -t ${{ secrets.TMUX_SESSION_NAME }} 2>/dev/null || tmux new-session -d -s ${{ secrets.TMUX_SESSION_NAME }}
+            tmux send-keys -t ${{ secrets.TMUX_SESSION_NAME }} C-c
+            tmux send-keys -t ${{ secrets.TMUX_SESSION_NAME }} 'bash' Enter
+            tmux send-keys -t ${{ secrets.TMUX_SESSION_NAME }} 'cd' Enter
+            tmux send-keys -t ${{ secrets.TMUX_SESSION_NAME }} 'cd ${{ secrets.APP_PATH }}' Enter
+            tmux send-keys -t ${{ secrets.TMUX_SESSION_NAME }} 'git pull' Enter
+            tmux send-keys -t ${{ secrets.TMUX_SESSION_NAME }} 'yarn' Enter
+            tmux send-keys -t ${{ secrets.TMUX_SESSION_NAME }} 'yarn build' Enter
+            tmux send-keys -t ${{ secrets.TMUX_SESSION_NAME }} 'cd dist/' Enter
+            tmux send-keys -t ${{ secrets.TMUX_SESSION_NAME }} 'http-server -p ${{ secrets.HTTP_SERVER_PORT }}' Enter
+            exit
