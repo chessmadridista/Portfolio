@@ -82,6 +82,14 @@ export default {
                 },
                 {
                     id: 5,
+                    backgroundImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOzlo4HEH8JNaz_AWqVWqS5Z6nXNHk6Hr9qg&s",
+                    title: "Love or hate",
+                    summary: "An exciting new form of social media where people can love and hate the posts, even in comments.",
+                    link: "https://loveorhate.nostalgician.in",
+                    isUnderDevelopment: true,
+                },
+                {
+                    id: 6,
                     backgroundImg: "https://thumbs.dreamstime.com/b/admin-word-wooden-cube-admin-word-wooden-cube-business-concept-266905680.jpg",
                     title: "Geektrust Admin UI",
                     summary: "This app was made accordingly as per the rules set in the Geektrust Admin UI challenge.",
@@ -89,7 +97,7 @@ export default {
                     isUnderDevelopment: false,
                 },
                 {
-                    id: 6,
+                    id: 7,
                     backgroundImg: "https://images.unsplash.com/photo-1532202193792-e95ef22f1bce?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dHNoaXJ0fGVufDB8fDB8fHww",
                     title: "Geektrust Teerex Store",
                     summary: "This app was made accordingly as per the rules set in the Geektrust Teerex challenge.",
