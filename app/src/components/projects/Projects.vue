@@ -42,18 +42,18 @@ export default {
             projects: [
                 {
                     id: 0,
-                    backgroundImg: "https://i.pinimg.com/736x/14/53/2d/14532daa32a704bf31adc1d8f93c935d.jpg",
-                    title: "Memento Mori",
-                    summary: "Embrace life's impermanence with our Memento Mori Calendar. Daily reminders of mortality inspire mindfulness, gratitude, and meaningful living. Track days with introspective quotes and reflections to cherish each moment.",
-                    link: "https://mementomori.nostalgician.in",
+                    backgroundImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaQLeWL02pTqVLqlqFdFdYlx-pd5xJ9oTsEg&s",
+                    title: "Serenify",
+                    summary: "Clear your mind with Serenify. Easily log and discard worries, anxieties, and fears. Embrace clarity, positivity, and mental peace. Turn negativity into motivation with daily affirmations and reflections, making space for a brighter, more serene mindset.",
+                    link: "https://serenify.nostalgician.in",
                     isUnderDevelopment: false,
                 },
                 {
                     id: 1,
-                    backgroundImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaQLeWL02pTqVLqlqFdFdYlx-pd5xJ9oTsEg&s",
-                    title: "Negative Thoughts Dustbin",
-                    summary: "Dispose of negative thoughts with our Dustbin App. Log and discard worries, anxieties, and fears. Gain clarity, positivity, and mental peace. Transform negativity into motivation with daily affirmations and reflections.",
-                    link: "https://dustbin.nostalgician.in",
+                    backgroundImg: "https://i.pinimg.com/736x/14/53/2d/14532daa32a704bf31adc1d8f93c935d.jpg",
+                    title: "Memento Mori",
+                    summary: "Embrace life's impermanence with our Memento Mori Calendar. Daily reminders of mortality inspire mindfulness, gratitude, and meaningful living. Track days with introspective quotes and reflections to cherish each moment.",
+                    link: "https://mementomori.nostalgician.in",
                     isUnderDevelopment: false,
                 },
                 {
