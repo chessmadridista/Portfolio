@@ -34,6 +34,8 @@
     </v-container>
 </template>
 <script>
+import SearchPulseLogo from '@/assets/images/logo-128.png'
+
 export default {
     name: "Projects",
     data() {
@@ -50,6 +52,14 @@ export default {
                 },
                 {
                     id: 1,
+                    backgroundImg: SearchPulseLogo,
+                    title: "SearchPulse",
+                    summary: "Keep your focus sharp with SearchPulse. Effortlessly store and manage search terms to revisit later without losing your flow. Avoid distractions and stay productive by saving your search ideas in one place. Open and explore your stored searches at your convenience, ensuring your work stays uninterrupted and your productivity stays high.",
+                    link: "https://chromewebstore.google.com/detail/searchpulse/knoicglgddhhjaaalijibkfobdfanapc",
+                    isUnderDevelopment: false,
+                },
+                {
+                    id: 2,
                     backgroundImg: "https://i.pinimg.com/736x/14/53/2d/14532daa32a704bf31adc1d8f93c935d.jpg",
                     title: "Memento Mori",
                     summary: "Embrace life's impermanence with our Memento Mori Calendar. Daily reminders of mortality inspire mindfulness, gratitude, and meaningful living. Track days with introspective quotes and reflections to cherish each moment.",
@@ -57,7 +67,7 @@ export default {
                     isUnderDevelopment: false,
                 },
                 {
-                    id: 2,
+                    id: 3,
                     backgroundImg: "https://steamuserimages-a.akamaihd.net/ugc/1884211780447608618/006383598D9BF7F19ECDB0AA97F98AB40DB889C5/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false",
                     title: "Sigma Goal Tracker",
                     summary: "Achieve excellence with Sigma Goal Tracker. Set, track, and conquer goals with precision. Boost productivity with personalized plans, progress analytics, and motivational tips. Stay focused, stay Sigma, and reach your peak.",
@@ -65,7 +75,7 @@ export default {
                     isUnderDevelopment: true,
                 },
                 {
-                    id: 3,
+                    id: 4,
                     backgroundImg: "https://t4.ftcdn.net/jpg/07/14/05/65/360_F_714056531_dFh9oTo4Dg18UJ11opVdC4FxIG9CyayE.jpg",
                     title: "Couples Journal",
                     summary: "Strengthen your bond with the Couples Journal App. Share thoughts, memories, and dreams. Daily prompts, reflections, and interactive features foster deeper connections and understanding. Celebrate your journey together.",
@@ -73,7 +83,7 @@ export default {
                     isUnderDevelopment: true,
                 },
                 {
-                    id: 4,
+                    id: 5,
                     backgroundImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCGJtBzxUq9pU-ImW8gIsZZSM81veVi5NWZQ&s",
                     title: "Wireframer",
                     summary: "Unleash your creative genius with our intuitive wireframing app. Design stunning prototypes effortlessly and bring your ideas to life in just a few clicks!",
@@ -81,7 +91,7 @@ export default {
                     isUnderDevelopment: true,
                 },
                 {
-                    id: 5,
+                    id: 6,
                     backgroundImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOzlo4HEH8JNaz_AWqVWqS5Z6nXNHk6Hr9qg&s",
                     title: "Love or hate",
                     summary: "An exciting new form of social media where people can love and hate the posts, even in comments.",
@@ -89,7 +99,7 @@ export default {
                     isUnderDevelopment: true,
                 },
                 {
-                    id: 6,
+                    id: 7,
                     backgroundImg: "https://thumbs.dreamstime.com/b/admin-word-wooden-cube-admin-word-wooden-cube-business-concept-266905680.jpg",
                     title: "Geektrust Admin UI",
                     summary: "This app was made accordingly as per the rules set in the Geektrust Admin UI challenge.",
@@ -97,7 +107,7 @@ export default {
                     isUnderDevelopment: false,
                 },
                 {
-                    id: 7,
+                    id: 8,
                     backgroundImg: "https://images.unsplash.com/photo-1532202193792-e95ef22f1bce?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dHNoaXJ0fGVufDB8fDB8fHww",
                     title: "Geektrust Teerex Store",
                     summary: "This app was made accordingly as per the rules set in the Geektrust Teerex challenge.",
